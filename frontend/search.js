@@ -35,8 +35,7 @@ input.addEventListener("input", async () => {
     `;
   document.querySelectorAll(".player-link").forEach(link => {
     link.addEventListener("click", () => {
-      const playerId = this.getAttribute("data-id");
-      window.location.href = `/playerStats.html?id=${playerId}`;
+      window.location.href = `/playerStats.html?id=${link["data-id"]}`;
     });
   });
 });
